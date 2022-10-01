@@ -1,0 +1,132 @@
+package com.company;
+
+public class EmpPerson {
+    static String ename;
+    static String eno;
+    static int age;
+    static String gen;
+    static int sdate;
+    static String level;
+    static String teaminfo;
+    static String title;
+    static int cellphone;
+    static String emailid;
+    static String photo;
+
+    public EmpPerson(String ename, String eno, int age, String gen, int sdate, String level, String teaminfo, String title, int cellphone, String emailid) {
+        this.ename = ename;
+        this.eno = eno;
+        this.age = age;
+        this.gen = gen;
+        this.sdate = sdate;
+        this.level = level;
+        this.teaminfo = teaminfo;
+        this.title = title;
+        this.cellphone = cellphone;
+        this.emailid = emailid;
+        this.photo = photo;
+
+    }
+
+    public EmpPerson(int eno, String ename) {
+    }
+
+    public static String getEname() {
+        return ename;
+    }
+
+    public static void setEname(String ename) {
+        EmpPerson.ename = ename;
+    }
+
+    public static String getEno() {
+        return eno;
+    }
+
+    public static void setEno(String eno) {
+        EmpPerson.eno = eno;
+    }
+
+    public static int getAge() {
+        return age;
+    }
+
+    public static void setAge(int age) {
+        EmpPerson.age = age;
+    }
+
+    public static String getGen() {
+        return gen;
+    }
+
+    public static void setGen(String gen) {
+        EmpPerson.gen = gen;
+    }
+
+    public static int getSdate() {
+        return sdate;
+    }
+
+    public static void setSdate(int sdate) {
+        EmpPerson.sdate = sdate;
+    }
+
+    public static String getLevel() {
+        return level;
+    }
+
+    public static void setLevel(String level) {
+        EmpPerson.level = level;
+    }
+
+    public static String getTeaminfo() {
+        return teaminfo;
+    }
+
+    public static void setTeaminfo(String teaminfo) {
+        EmpPerson.teaminfo = teaminfo;
+    }
+
+    public static String getTitle() {
+        return title;
+    }
+
+    public static void setTitle(String title) {
+        EmpPerson.title = title;
+    }
+
+    public static int getCellphone() {
+        return cellphone;
+    }
+
+    public static void setCellphone(int cellphone) {
+        EmpPerson.cellphone = cellphone;
+    }
+
+    public static String getEmailid() {
+        return emailid;
+    }
+
+    public static void setEmailid(String emailid) {
+        EmpPerson.emailid = emailid;
+    }
+
+    public static String getPhoto() {
+        return photo;
+    }
+
+    public static void setPhoto(String photo) {
+        EmpPerson.photo = photo;
+    }
+
+    public void printName() {
+        System.out.println("Name: " + ename);
+    }
+
+
+    public boolean isMatch(String id) {
+        if(getEno().equals(eno))
+            return true;
+        return false;
+    }
+}
