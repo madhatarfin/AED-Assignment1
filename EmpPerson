@@ -66,14 +66,14 @@ public class EmpPerson {
     public static int getSdate() {
         return sdate;
     }
+    public static String getLevel() {
+        return level;
+    }
 
     public static void setSdate(int sdate) {
         EmpPerson.sdate = sdate;
     }
 
-    public static String getLevel() {
-        return level;
-    }
 
     public static void setLevel(String level) {
         EmpPerson.level = level;
@@ -121,12 +121,5 @@ public class EmpPerson {
 
     public void printName() {
         System.out.println("Name: " + ename);
-    }
-
-
-    public boolean isMatch(String id) {
-        if(getEno().equals(eno))
-            return true;
-        return false;
     }
 }
