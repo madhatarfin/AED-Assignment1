@@ -1,0 +1,16 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class EmpDirectory {
+    ArrayList<EmpPerson> personlist;
+
+    public void PersonDirectory() {
+        personlist = new ArrayList<EmpPerson>();
+    }
+
+    public EmpPerson newPerson(String eno, String ename, int age, String gen, int sdate, String level, String teaminfo, String title, int cellphone, String emailid) {
+        EmpPerson p = new EmpPerson(eno, ename, age, gen, sdate, level, teaminfo, title, cellphone, emailid);
+        return p;
+    }
+}
